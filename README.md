@@ -43,9 +43,16 @@ result = process_user.delay(user)
 - Maintains type safety throughout the task execution
 - Compatible with Celery's result backend
 
+## Testing
+
+To run the tests locally:
+
+1. `uv sync --all-extras`
+2. `uv run pytest`
+
 ## Requirements
 
-- Python 3.8+
+- Python 3.9+
 - Celery 5.0+
 - Pydantic 2.0+
 
