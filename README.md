@@ -13,7 +13,7 @@ pip install celery-pydantic
 ```python
 from celery import Celery
 from pydantic import BaseModel
-from celery_pydantic import pydantic_celery_app
+from celery_pydantic import pydantic_celery
 
 # Define your Pydantic model
 class User(BaseModel):
@@ -24,7 +24,7 @@ class User(BaseModel):
 app = Celery('myapp')
 
 # Configure the app to use Pydantic serialization
-pydantic_celery_app(app)
+pydantic_celery(app)
 
 # Use Pydantic models in your tasks
 @app.task
