@@ -21,7 +21,7 @@ class User(BaseModel):
     age: int
 
 # Create your Celery app
-app = Celery('myapp')
+app = Celery('myapp', broker='amqp://')
 
 # Configure the app to use Pydantic serialization
 pydantic_celery(app)
