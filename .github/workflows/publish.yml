@@ -35,6 +35,7 @@ jobs:
   publish:
     needs: test
     runs-on: ubuntu-latest
+    environment: prod
     if: github.event_name == 'release' && github.event.action == 'created'
     
     steps:
