@@ -13,7 +13,7 @@ setup(
     description="A library for serializing Pydantic models in Celery tasks",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/celery_pydantic",
+    url="https://github.com/jwnwilson/celery_pydantic",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
